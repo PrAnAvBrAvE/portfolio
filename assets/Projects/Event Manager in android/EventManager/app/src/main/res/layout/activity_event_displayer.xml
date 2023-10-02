@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".EventDisplayerActivity">
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@android:color/black"
+        android:backgroundTint="@color/colorPrimary"
+        android:foregroundGravity="center"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_add_event"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/addEvent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:id="@+id/setAlarm">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="Title of Event"
+            android:id="@+id/titleText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="Date of Event"
+            android:layout_below="@id/titleText"
+            android:enabled="false"
+            android:id="@+id/dateText"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="Time of Event"
+            android:enabled="false"
+            android:layout_below="@id/dateText"
+            android:id="@+id/timeText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Set Date Time"
+            android:layout_below="@id/timeText"
+            android:id="@+id/setDT"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:enabled="false"
+            android:layout_below="@id/setDT"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnAdd"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

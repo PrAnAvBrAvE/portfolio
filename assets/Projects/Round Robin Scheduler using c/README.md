@@ -1,0 +1,2 @@
+# Round-Robin-Scheduler-using-C
+I have created a round robin scheduler using C. Round robin is a process scheduling algorithm which is used by Operating System to manage processes. User has to enter no of processes arrival time, burst time of all processes and time quantum. The system will print Gantt Chart which will show how the processes have executed and will calculate turnaround time, average turnaround time, waiting time and average turnaround time.
